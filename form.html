@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>설문조사 양식</title>
+</head>
+
+<body>
+    <header>
+        <h1>설문조사 양식</h1>
+        <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" name="name"
+                id="name" placeholder="본명을 입력하세요">
+                <br>
+                <label for="email">이메일</label>
+                <input type="email" name="email"
+                id="email" placeholder="메일 주소를 입력하세요">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                <p>연령대가 어떻게 되십니까?</p>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type="radio" id="twenty" name="age">
+                <label for="twenty">20대</label>
+                <input type="radio" id="tdirty" name="age">
+                <label for="tdirty">30대</label>
+                <input type="radio" id="fourty" name="age">
+                <label for="fourty">40대</label>
+                <input type="radio" id="fifty" name="age">
+                <label for="fifty">50대</label>
+                <input type="radio" id="otder" name="age">
+                <label for="otder">그 외</label>
+
+                <p>가장 선호하는 차 종은 무엇입니까?</p>
+                <input type="radio" id="sedan" name="cartype">
+                <label for="sedan">세단</label>
+                <input type="radio" id="coupe" name="cartype">
+                <label for="coupe">쿠페</label>
+                <input type="radio" id="sportscar" name="cartype">
+                <label for="sportscar">스포츠카</label>
+                <input type="radio" id="hatchback" name="cartype">
+                <label for="hatchback">해치백</label>
+                <input type="radio" id="suv" name="cartype">
+                <label for="suv">SUV</label>
+            </fieldset>
+            <fieldset>
+                <legend>기타의견</legend>
+                <textarea rows="3" cols="30" name="comment"></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>입력하느라 수고하셨습니다.</p>
+    </footer>
+</body>
+
+</html>
